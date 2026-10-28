@@ -1,0 +1,174 @@
+[
+  {
+    "protocol": "grouped_fixed",
+    "model": "Median",
+    "params": {},
+    "test_rows": 1959,
+    "overlap_rows": 0,
+    "MAE": 27.885526605704417,
+    "RMSE": 44.03458787099912,
+    "R2": -0.06024269213135858,
+    "seconds": 0.0820975999959046,
+    "peak_rss_mb": 249.46484375,
+    "min_available_mb": 1449.4140625
+  },
+  {
+    "protocol": "grouped_fixed",
+    "model": "Ridge",
+    "params": {
+      "alpha": 10.0
+    },
+    "test_rows": 1959,
+    "overlap_rows": 0,
+    "MAE": 9.803158628756854,
+    "RMSE": 23.65196441610524,
+    "R2": 0.6941194590981618,
+    "seconds": 0.09967700000561308,
+    "peak_rss_mb": 253.93359375,
+    "min_available_mb": 1440.94140625
+  },
+  {
+    "protocol": "grouped_fixed",
+    "model": "Random Forest",
+    "params": {
+      "n_estimators": 150,
+      "max_depth": 18,
+      "min_samples_split": 4,
+      "min_samples_leaf": 2,
+      "max_features": 0.8
+    },
+    "test_rows": 1959,
+    "overlap_rows": 0,
+    "MAE": 5.173015760700239,
+    "RMSE": 19.131825025553955,
+    "R2": 0.7998616955460335,
+    "seconds": 18.14940329999081,
+    "peak_rss_mb": 269.41796875,
+    "min_available_mb": 1420.234375
+  },
+  {
+    "protocol": "grouped_fixed",
+    "model": "XGBoost",
+    "params": {
+      "n_estimators": 300,
+      "learning_rate": 0.05,
+      "max_depth": 6,
+      "subsample": 0.85,
+      "colsample_bytree": 0.85,
+      "reg_alpha": 0.1,
+      "reg_lambda": 2.0
+    },
+    "test_rows": 1959,
+    "overlap_rows": 0,
+    "MAE": 6.067066493667922,
+    "RMSE": 19.554787489221457,
+    "R2": 0.7909146438583097,
+    "seconds": 1.4232081999944057,
+    "peak_rss_mb": 254.87109375,
+    "min_available_mb": 1430.60546875
+  },
+  {
+    "protocol": "grouped_fixed",
+    "model": "CatBoost",
+    "params": {
+      "iterations": 600,
+      "depth": 6,
+      "learning_rate": 0.05,
+      "l2_leaf_reg": 5.0
+    },
+    "test_rows": 1959,
+    "overlap_rows": 0,
+    "MAE": 6.644817845029847,
+    "RMSE": 20.010968820510907,
+    "R2": 0.7810456155273382,
+    "seconds": 20.052044500000193,
+    "peak_rss_mb": 261.57421875,
+    "min_available_mb": 1371.2734375
+  },
+  {
+    "protocol": "random_fixed",
+    "model": "Median",
+    "params": {},
+    "test_rows": 1954,
+    "overlap_rows": 297,
+    "MAE": 29.60210369287567,
+    "RMSE": 50.275346846608365,
+    "R2": -0.06413213200985868,
+    "seconds": 0.08496069999819156,
+    "peak_rss_mb": 246.61328125,
+    "min_available_mb": 1431.28515625
+  },
+  {
+    "protocol": "random_fixed",
+    "model": "Ridge",
+    "params": {
+      "alpha": 10.0
+    },
+    "test_rows": 1954,
+    "overlap_rows": 297,
+    "MAE": 10.605210058776947,
+    "RMSE": 27.34070327315523,
+    "R2": 0.6852941838217077,
+    "seconds": 0.10619829999632202,
+    "peak_rss_mb": 250.9375,
+    "min_available_mb": 1431.80078125
+  },
+  {
+    "protocol": "random_fixed",
+    "model": "Random Forest",
+    "params": {
+      "n_estimators": 150,
+      "max_depth": 18,
+      "min_samples_split": 4,
+      "min_samples_leaf": 2,
+      "max_features": 0.8
+    },
+    "test_rows": 1954,
+    "overlap_rows": 297,
+    "MAE": 5.888032940552774,
+    "RMSE": 21.136470310025622,
+    "R2": 0.811916657559518,
+    "seconds": 18.6891181999963,
+    "peak_rss_mb": 268.78515625,
+    "min_available_mb": 1398.6640625
+  },
+  {
+    "protocol": "random_fixed",
+    "model": "XGBoost",
+    "params": {
+      "n_estimators": 300,
+      "learning_rate": 0.05,
+      "max_depth": 6,
+      "subsample": 0.85,
+      "colsample_bytree": 0.85,
+      "reg_alpha": 0.1,
+      "reg_lambda": 2.0
+    },
+    "test_rows": 1954,
+    "overlap_rows": 297,
+    "MAE": 6.926460001011855,
+    "RMSE": 21.363429427988113,
+    "R2": 0.8078557701675293,
+    "seconds": 1.3614284999930533,
+    "peak_rss_mb": 254.390625,
+    "min_available_mb": 1434.0625
+  },
+  {
+    "protocol": "random_fixed",
+    "model": "CatBoost",
+    "params": {
+      "iterations": 600,
+      "depth": 6,
+      "learning_rate": 0.05,
+      "l2_leaf_reg": 5.0
+    },
+    "test_rows": 1954,
+    "overlap_rows": 297,
+    "MAE": 7.3231147009109545,
+    "RMSE": 21.478569031557523,
+    "R2": 0.8057790410251979,
+    "seconds": 18.973291600006633,
+    "peak_rss_mb": 262.1640625,
+    "min_available_mb": 1416.05078125
+  }
+]

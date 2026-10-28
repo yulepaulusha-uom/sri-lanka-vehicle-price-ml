@@ -1,0 +1,79 @@
+{
+  "prediction": 149.40420444524779,
+  "intercept": 53.441959953968585,
+  "sum": 149.4042044452478,
+  "sum_difference": 2.842170943040401e-14,
+  "terms": [
+    {
+      "term": "Brand",
+      "value": 47.11345425616117
+    },
+    {
+      "term": "Model",
+      "value": 8.242854219460375
+    },
+    {
+      "term": "YOM",
+      "value": 41.5977913591622
+    },
+    {
+      "term": "Engine (cc)",
+      "value": -4.800852338466278
+    },
+    {
+      "term": "Gear",
+      "value": 2.6489954954294097
+    },
+    {
+      "term": "Fuel Type",
+      "value": 0.27603592329458915
+    },
+    {
+      "term": "Town",
+      "value": 0.5990598988015985
+    },
+    {
+      "term": "Leasing",
+      "value": 0.12910972980797417
+    },
+    {
+      "term": "Condition",
+      "value": -0.09076168350693681
+    },
+    {
+      "term": "AIR CONDITION",
+      "value": 0.006327829304630116
+    },
+    {
+      "term": "POWER STEERING",
+      "value": -0.1825448294494455
+    },
+    {
+      "term": "POWER MIRROR",
+      "value": 0.6583906204455162
+    },
+    {
+      "term": "POWER WINDOW",
+      "value": -0.23561598916556475
+    }
+  ],
+  "warnings": [],
+  "row_id": 11,
+  "actual": 139.0,
+  "features": {
+    "Brand": "AUDI",
+    "Model": "A3",
+    "YOM": 2018,
+    "Engine (cc)": 1000.0,
+    "Gear": "Automatic",
+    "Fuel Type": "Petrol",
+    "Town": "Kandy",
+    "Leasing": "No Leasing",
+    "Condition": "USED",
+    "AIR CONDITION": "Available",
+    "POWER STEERING": "Available",
+    "POWER MIRROR": "Available",
+    "POWER WINDOW": "Available"
+  },
+  "rule": "Historical demonstration row, predeclared in protocol before EBM error inspection."
+}

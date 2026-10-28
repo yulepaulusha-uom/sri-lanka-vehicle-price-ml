@@ -1,0 +1,37 @@
+{
+  "terms": 13,
+  "global_names": [
+    "Brand",
+    "Model",
+    "YOM",
+    "Engine (cc)",
+    "Gear",
+    "Fuel Type",
+    "Town",
+    "Leasing",
+    "Condition",
+    "AIR CONDITION",
+    "POWER STEERING",
+    "POWER MIRROR",
+    "POWER WINDOW"
+  ],
+  "global_scores": [
+    11.264403629614105,
+    6.3636187272377684,
+    23.38912984858352,
+    8.090808212266127,
+    3.41917457238757,
+    1.3317366018630907,
+    2.199122526667997,
+    0.24731017505913577,
+    0.1797339291365118,
+    0.012407762595021746,
+    0.33335289300561916,
+    0.9784404457984319,
+    0.3853230886699429
+  ],
+  "local_sum_difference": 2.842170943040401e-14,
+  "link": "identity",
+  "categorical_support_threshold": 50,
+  "importance_definition": "Development-weighted mean absolute native term contribution; not RF permutation MAE increase."
+}

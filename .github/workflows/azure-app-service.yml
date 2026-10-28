@@ -1,0 +1,65 @@
+name: Verify and optionally deploy Streamlit
+on:
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: Deploy to the approved existing Azure Web App
+        required: true
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: azure-streamlit
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Build dataset-free runtime directory
+        run: python deployment/prepare.py
+      - name: Install only pinned runtime wheels
+        run: |
+          python -m pip install --only-binary=:all: -r deployment/requirements.txt
+      - name: Verify dependencies and inference without training
+        run: |
+          python -m pip check
+          python deployment/smoke_test.py --app-root build/azure --cases deployment/smoke_cases.json --output runtime-checks.json
+  deploy:
+    needs: verify
+    if: ${{ inputs.deploy && vars.AZURE_DEPLOY_ENABLED == 'true' && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    environment: production
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - run: python deployment/prepare.py
+      - name: Authenticate with Azure using OIDC
+        uses: Azure/login@a641126d1b8aa4d1fa005f4f92df94a3a4c4c906 # v3.1.0
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - name: Deploy source folder for Oryx build
+        uses: Azure/webapps-deploy@02a81bead70021f5284939794bcec79c271ab383 # v3
+        with:
+          app-name: ${{ vars.AZURE_WEBAPP_NAME }}
+          package: build/azure
+          startup-command: python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0 --server.headless true
+      - name: Check public HTTP health
+        env:
+          APP_NAME: ${{ vars.AZURE_WEBAPP_NAME }}
+        run: curl --fail --retry 12 --retry-delay 10 --retry-all-errors "https://${APP_NAME}.azurewebsites.net/_stcore/health"

@@ -1,0 +1,96 @@
+{
+  "run": "ebm-local-v1",
+  "base": {
+    "feature_names": [
+      "Brand",
+      "Model",
+      "YOM",
+      "Engine (cc)",
+      "Gear",
+      "Fuel Type",
+      "Town",
+      "Leasing",
+      "Condition",
+      "AIR CONDITION",
+      "POWER STEERING",
+      "POWER MIRROR",
+      "POWER WINDOW"
+    ],
+    "feature_types": [
+      "nominal",
+      "nominal",
+      "continuous",
+      "continuous",
+      "nominal",
+      "nominal",
+      "nominal",
+      "nominal",
+      "nominal",
+      "nominal",
+      "nominal",
+      "nominal",
+      "nominal"
+    ],
+    "objective": "rmse",
+    "interactions": 0,
+    "max_leaves": 3,
+    "max_rounds": 2000,
+    "outer_bags": 4,
+    "inner_bags": 0,
+    "early_stopping_rounds": 50,
+    "validation_size": 0.15,
+    "greedy_ratio": 0,
+    "smoothing_rounds": 100,
+    "n_jobs": 1,
+    "random_state": 42,
+    "min_cat_samples": 10,
+    "cat_smooth": 10
+  },
+  "configurations": [
+    {
+      "id": "C0",
+      "max_bins": 128,
+      "learning_rate": 0.04,
+      "min_samples_leaf": 10
+    },
+    {
+      "id": "C1",
+      "max_bins": 256,
+      "learning_rate": 0.04,
+      "min_samples_leaf": 10
+    },
+    {
+      "id": "C2",
+      "max_bins": 128,
+      "learning_rate": 0.02,
+      "min_samples_leaf": 10
+    },
+    {
+      "id": "C3",
+      "max_bins": 128,
+      "learning_rate": 0.04,
+      "min_samples_leaf": 20
+    },
+    {
+      "id": "C4",
+      "max_bins": 256,
+      "learning_rate": 0.02,
+      "min_samples_leaf": 20
+    },
+    {
+      "id": "C5",
+      "max_bins": 256,
+      "learning_rate": 0.04,
+      "min_samples_leaf": 20
+    }
+  ],
+  "selection": "minimum mean grouped CV MAE",
+  "max_outer_fits": 30,
+  "split_sha256": "6a212dd396139fe76482d78e768fe703c9a15d169d3dd6e705b268a04fe90329",
+  "csv_sha256": "4208d2673cf4d9c8d3d6042dc8a1b97004671812441975f5879550059fbce1ab",
+  "local_example_row_id": 11,
+  "local_rule": "Reuse the historical heldout demonstration row 11, declared before EBM error inspection.",
+  "holdout_disclosure": "Previously inspected historical holdout; subsequent extension, not independent untouched benchmark.",
+  "internal_validation": "Four explicit group-preserving 15% group validation bags within each training partition; seeds42..45.",
+  "rationale": "Small additive search varies bin resolution, shrinkage and leaf support; interactions excluded for direct explanation."
+}

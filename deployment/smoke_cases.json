@@ -1,0 +1,40 @@
+{
+  "heldout": {
+    "features": {
+      "Brand": "AUDI",
+      "Model": "A3",
+      "YOM": 2018,
+      "Engine (cc)": 1000.0,
+      "Gear": "Automatic",
+      "Fuel Type": "Petrol",
+      "Town": "Kandy",
+      "Leasing": "No Leasing",
+      "Condition": "USED",
+      "AIR CONDITION": "Available",
+      "POWER STEERING": "Available",
+      "POWER MIRROR": "Available",
+      "POWER WINDOW": "Available"
+    },
+    "rf_prediction": 141.45691636604138,
+    "ebm_prediction": 149.40420444524779
+  },
+  "negative": {
+    "features": {
+      "Brand": "DAEWOO",
+      "Model": "DAEWOO",
+      "YOM": 1987,
+      "Engine (cc)": 1234.0,
+      "Gear": "Manual",
+      "Fuel Type": "Petrol",
+      "Town": "Kurunegala",
+      "Leasing": "No Leasing",
+      "Condition": "USED",
+      "AIR CONDITION": "Available",
+      "POWER STEERING": "Available",
+      "POWER MIRROR": "Available",
+      "POWER WINDOW": "Not_Available"
+    },
+    "ebm_prediction": -6.801162414853096
+  },
+  "provenance": "Verification fixtures from already recorded holdout predictions; no new fitting or selection."
+}

@@ -1,0 +1,82 @@
+{
+  "status": "Locally verified preparation; no GitHub/Azure connection or deployment",
+  "runtime_tests": {
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "fit_calls": 0,
+    "python": "3.12.16 (main, Oct 26 2026, 22:52:58) [GCC 12.2.0]",
+    "platform": "linux"
+  },
+  "wheels_only_install": true,
+  "pip_check": "No broken requirements found.",
+  "runtime_pin_count": 45,
+  "browser": {
+    "local_linux": true,
+    "form_rf": "51.35",
+    "form_ebm": "76.19",
+    "sum": "76.186059",
+    "sum_difference": "2.8e-14",
+    "rare_warning": true,
+    "ebm_metrics": [
+      "9.764",
+      "23.908",
+      "0.687"
+    ],
+    "negative_count_warning": 38,
+    "images_loaded": 7,
+    "console_errors": 0,
+    "console_warnings": 0,
+    "restart_form_recovered": true
+  },
+  "local_restart": {
+    "before_http": 200,
+    "after_http": 200,
+    "restart_recovery_seconds": 2.2838617999805138,
+    "note": "Local Linux process restart using the same startup command; Azure-managed restart and proxy remain untested."
+  },
+  "workflow": {
+    "yaml_parsed": true,
+    "manual_only": true,
+    "default_deploy": false,
+    "explicit_enable_required": true,
+    "environment": "production",
+    "actions_commit_pinned": true,
+    "workflow_executed": false
+  },
+  "workflow_initial_issue": "Unquoted pip --only-binary scalar caused YAML parse error; corrected to a block scalar and revalidated.",
+  "model_hashes": {
+    "models/accepted/pipeline.joblib": "a508806281861d027406881d98713e67fbb1c2cb12a8f258e5accdb4a12116aa",
+    "models/ebm_extension/ebm-local-v1/model.joblib": "b21f4a37aabf473a405e12145bca5d011a544e17b415901cd04272779c364759"
+  },
+  "report": {
+    "pages": 10,
+    "main_pages": 8,
+    "all_pages_visually_reviewed": true,
+    "mileage_equation_visible_page": 2,
+    "additive_equation_visible_page": 3,
+    "acknowledgement_retained": true,
+    "policy_provided": false,
+    "policy_review_required": true
+  },
+  "azure": {
+    "provisioned": false,
+    "public_url_tested": false,
+    "region_approved": false,
+    "runtime_subscription_query_performed": false
+  },
+  "cost": {
+    "proposed_region": "southeastasia",
+    "sku": "B1 Linux",
+    "usd_hour": 0.018,
+    "usd_730_hours": 13.14,
+    "subscription_quote": false
+  },
+  "references": [
+    "https://learn.microsoft.com/en-us/azure/app-service/configure-language-python",
+    "https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions",
+    "https://learn.microsoft.com/en-us/troubleshoot/azure/app-service/faqs-app-service-linux-new",
+    "https://azure.microsoft.com/en-us/pricing/details/app-service/linux/"
+  ],
+  "temporary_linux_container_removed": true
+}

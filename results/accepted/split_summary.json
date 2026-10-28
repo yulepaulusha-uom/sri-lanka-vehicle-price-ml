@@ -1,0 +1,9 @@
+{
+  "development_rows": 7811,
+  "test_rows": 1959,
+  "group_overlap": 0,
+  "cv_folds": 5,
+  "random_train_rows": 7816,
+  "random_test_rows": 1954,
+  "random_test_predictor_overlap": 297
+}

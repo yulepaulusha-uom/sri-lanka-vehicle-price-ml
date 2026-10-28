@@ -1,0 +1,2 @@
+# Preserve exact research/artifact bytes across Windows and Linux checkouts.
+* -text

@@ -1,0 +1,269 @@
+{
+  "signature": "1e5579b5b1eb6402b5b7d39cab0c2b8ed6cb6686dd384add7daa6c44753fc3f6",
+  "csv_sha256": "4208d2673cf4d9c8d3d6042dc8a1b97004671812441975f5879550059fbce1ab",
+  "seed": 42,
+  "test_size": 0.2,
+  "cv": "GroupKFold(5)",
+  "search_n_jobs": 1,
+  "estimator_threads": 2,
+  "primary_metric": "MAE",
+  "selection": "within 1% of minimum CV MAE, then lowest mean fit time",
+  "target": "raw Price",
+  "candidates": {
+    "Median": [
+      {}
+    ],
+    "Ridge": [
+      {
+        "alpha": 0.1
+      },
+      {
+        "alpha": 1.0
+      },
+      {
+        "alpha": 10.0
+      },
+      {
+        "alpha": 100.0
+      },
+      {
+        "alpha": 1000.0
+      }
+    ],
+    "Random Forest": [
+      {
+        "n_estimators": 150,
+        "max_depth": 18,
+        "min_samples_split": 4,
+        "min_samples_leaf": 2,
+        "max_features": 0.8
+      },
+      {
+        "n_estimators": 300,
+        "min_samples_split": 4,
+        "min_samples_leaf": 8,
+        "max_features": 0.8,
+        "max_depth": null
+      },
+      {
+        "n_estimators": 300,
+        "min_samples_split": 4,
+        "min_samples_leaf": 2,
+        "max_features": 0.6,
+        "max_depth": 18
+      },
+      {
+        "n_estimators": 150,
+        "min_samples_split": 4,
+        "min_samples_leaf": 4,
+        "max_features": 0.6,
+        "max_depth": null
+      },
+      {
+        "n_estimators": 150,
+        "min_samples_split": 4,
+        "min_samples_leaf": 2,
+        "max_features": 0.8,
+        "max_depth": null
+      },
+      {
+        "n_estimators": 150,
+        "min_samples_split": 4,
+        "min_samples_leaf": 8,
+        "max_features": 0.6,
+        "max_depth": 18
+      },
+      {
+        "n_estimators": 300,
+        "min_samples_split": 4,
+        "min_samples_leaf": 2,
+        "max_features": 0.8,
+        "max_depth": null
+      },
+      {
+        "n_estimators": 300,
+        "min_samples_split": 4,
+        "min_samples_leaf": 4,
+        "max_features": 0.8,
+        "max_depth": 18
+      }
+    ],
+    "XGBoost": [
+      {
+        "n_estimators": 300,
+        "learning_rate": 0.05,
+        "max_depth": 6,
+        "subsample": 0.85,
+        "colsample_bytree": 0.85,
+        "reg_alpha": 0.1,
+        "reg_lambda": 2.0
+      },
+      {
+        "subsample": 0.85,
+        "reg_lambda": 2.0,
+        "reg_alpha": 0.5,
+        "n_estimators": 600,
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.7
+      },
+      {
+        "subsample": 0.85,
+        "reg_lambda": 2.0,
+        "reg_alpha": 0.5,
+        "n_estimators": 600,
+        "max_depth": 3,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.85
+      },
+      {
+        "subsample": 0.7,
+        "reg_lambda": 2.0,
+        "reg_alpha": 0.1,
+        "n_estimators": 300,
+        "max_depth": 5,
+        "learning_rate": 0.1,
+        "colsample_bytree": 0.85
+      },
+      {
+        "subsample": 0.7,
+        "reg_lambda": 5.0,
+        "reg_alpha": 0.1,
+        "n_estimators": 600,
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.7
+      },
+      {
+        "subsample": 0.85,
+        "reg_lambda": 2.0,
+        "reg_alpha": 0.5,
+        "n_estimators": 300,
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.85
+      },
+      {
+        "subsample": 0.85,
+        "reg_lambda": 2.0,
+        "reg_alpha": 0.1,
+        "n_estimators": 600,
+        "max_depth": 3,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.7
+      },
+      {
+        "subsample": 0.7,
+        "reg_lambda": 5.0,
+        "reg_alpha": 0.5,
+        "n_estimators": 600,
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.7
+      },
+      {
+        "subsample": 0.7,
+        "reg_lambda": 2.0,
+        "reg_alpha": 0.5,
+        "n_estimators": 600,
+        "max_depth": 5,
+        "learning_rate": 0.03,
+        "colsample_bytree": 0.85
+      },
+      {
+        "subsample": 0.85,
+        "reg_lambda": 2.0,
+        "reg_alpha": 0.5,
+        "n_estimators": 600,
+        "max_depth": 5,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.7
+      }
+    ],
+    "CatBoost": [
+      {
+        "iterations": 600,
+        "depth": 6,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 5.0
+      },
+      {
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 5.0,
+        "iterations": 400,
+        "depth": 6
+      },
+      {
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 3.0,
+        "iterations": 400,
+        "depth": 4
+      },
+      {
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 5.0,
+        "iterations": 800,
+        "depth": 4
+      },
+      {
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 5.0,
+        "iterations": 400,
+        "depth": 6
+      },
+      {
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 3.0,
+        "iterations": 800,
+        "depth": 4
+      },
+      {
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 3.0,
+        "iterations": 400,
+        "depth": 6
+      },
+      {
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 3.0,
+        "iterations": 600,
+        "depth": 4
+      },
+      {
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 10.0,
+        "iterations": 600,
+        "depth": 8
+      },
+      {
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 5.0,
+        "iterations": 400,
+        "depth": 4
+      }
+    ]
+  },
+  "sensitivity": "fixed reference params, grouped and random; no tuning",
+  "source_hashes": {
+    "data.py": "eecf784a12e96bfda3d9177dab97b4bb88af9f72b6c878054529db249272c0a2",
+    "models.py": "306642ebb13a016019f3b097df8a186e2b5635dbb0ecddaaed601f202ebfe5bf",
+    "training.py": "6c61b80d1a754fb4d65d1be6c75ba31eecb243195e3a6fa5aab43b72ae8d0bd1"
+  },
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "logical_cpus": 4,
+    "total_ram_gb": 7.876857757568359,
+    "versions": {
+      "numpy": "2.1.3",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.6.1",
+      "xgboost": "3.4.1",
+      "catboost": "1.2.10",
+      "streamlit": "1.65.0",
+      "joblib": "1.6.0",
+      "psutil": "7.2.2"
+    }
+  }
+}

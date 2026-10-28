@@ -1,0 +1,79 @@
+{
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "logical_cpus": 4,
+    "total_ram_gb": 7.876857757568359,
+    "versions": {
+      "numpy": "2.1.3",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.6.1",
+      "xgboost": "3.4.1",
+      "catboost": "1.2.10",
+      "streamlit": "1.65.0",
+      "joblib": "1.6.0",
+      "psutil": "7.2.2"
+    }
+  },
+  "records": [
+    {
+      "model": "Median",
+      "training_rows": 2000,
+      "validation_rows": 500,
+      "seconds": 0.11515840000356548,
+      "peak_rss_mb": 170.48046875,
+      "min_available_mb": 1394.6875,
+      "MAE": 39.6264609588109,
+      "RMSE": 68.27141318492872,
+      "R2": -0.04806891960483495
+    },
+    {
+      "model": "Ridge",
+      "training_rows": 2000,
+      "validation_rows": 500,
+      "seconds": 0.048391199990874156,
+      "peak_rss_mb": 170.625,
+      "min_available_mb": 1393.078125,
+      "MAE": 19.702794804430162,
+      "RMSE": 40.08464228503277,
+      "R2": 0.6386999001646156
+    },
+    {
+      "model": "Random Forest",
+      "training_rows": 2000,
+      "validation_rows": 500,
+      "seconds": 3.4068461999995634,
+      "peak_rss_mb": 179.9296875,
+      "min_available_mb": 1390.8828125,
+      "MAE": 12.579093084607004,
+      "RMSE": 29.230325292526302,
+      "R2": 0.8078770024903275
+    },
+    {
+      "model": "XGBoost",
+      "training_rows": 2000,
+      "validation_rows": 500,
+      "seconds": 0.6978850999876158,
+      "peak_rss_mb": 181.40234375,
+      "min_available_mb": 1388.8984375,
+      "MAE": 11.112885483618753,
+      "RMSE": 25.861401904971316,
+      "R2": 0.84961096101141
+    },
+    {
+      "model": "CatBoost",
+      "training_rows": 2000,
+      "validation_rows": 500,
+      "seconds": 19.252374400006374,
+      "peak_rss_mb": 192.69140625,
+      "min_available_mb": 1290.65625,
+      "MAE": 11.28057619079185,
+      "RMSE": 24.10072243886602,
+      "R2": 0.8693912782312557
+    }
+  ],
+  "memory_note": "Sampled process RSS, not total system allocation; includes Python and libraries.",
+  "projected_cv_seconds": 3548.663734373349,
+  "estimate_note": "Rough linear row scaling from reference configurations; deeper trees can cost more."
+}

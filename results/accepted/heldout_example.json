@@ -1,0 +1,22 @@
+{
+  "row_id": 11,
+  "rule": "First row returned by primary held-out split; fixed before inspecting errors",
+  "features": {
+    "Brand": "AUDI",
+    "Model": "A3",
+    "YOM": 2018,
+    "Engine (cc)": 1000.0,
+    "Gear": "Automatic",
+    "Fuel Type": "Petrol",
+    "Town": "Kandy",
+    "Leasing": "No Leasing",
+    "Condition": "USED",
+    "AIR CONDITION": "Available",
+    "POWER STEERING": "Available",
+    "POWER MIRROR": "Available",
+    "POWER WINDOW": "Available"
+  },
+  "actual": 139.0,
+  "prediction": 141.45691636604138,
+  "absolute_error": 2.4569163660413835
+}

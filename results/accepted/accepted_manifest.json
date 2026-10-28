@@ -1,0 +1,42 @@
+{
+  "source_run": "results\\runs\\main-local-20261020-v2",
+  "winner": "Random Forest",
+  "models": {
+    "fit.json": "86a8385ad1dbfdbb967356d7343f8d51933426ba57a4d7033d04cf56db21fcd6",
+    "pipeline.joblib": "a508806281861d027406881d98713e67fbb1c2cb12a8f258e5accdb4a12116aa"
+  },
+  "results": {
+    "audit.json": "f58502aec1648d46643776a4e5db58790c0be05f2fd1cec04435aa37ac25895e",
+    "catboost_predictions.csv": "c7867ebf87a89bbd040732878904bc90e895739f83469a87053320ba7091e2ba",
+    "catboost_test.json": "6f98e7527fa03f8a434b11df1b194d4078ba732813e2bc51226fe2a476b90b4e",
+    "category_errors.json": "afa5196819c5d4d21b5cb4d1ac19a4143099252215c4986a8dabe4449dd4e5d2",
+    "complete.json": "45eada4b64dfaade533171a0f009d4efe26aa59eb368e99551e9808187471730",
+    "cv_folds.json": "21ede3d033a5c31fb00375410d2fdcfde633102ad6bee9a5cf08dcee4b927565",
+    "cv_results.json": "5fb1c6642c20c22a792a12cb2570b34681b34fb854ed54f1f99132aedfb10ac7",
+    "development_cardinalities.csv": "028768f99a86245a6e2c9f6ee2f0cd957bc938fbbefa0ad5ea15ebef6c217f68",
+    "development_eda.json": "91324aa44febc930d00c15b2084299ea2576b440cc937bdc40f184893497ab5b",
+    "development_summary.csv": "e1b940b462f46614278b348c24150281f0a44daed4046ab5ce105fc400d8179a",
+    "heldout_example.json": "77f44f7c174611da8c22d9e6c84782ec5d13086f743ea95d03f52e19aa94327b",
+    "input_metadata.json": "59a2a67bed569ff0c8c32aa6b83b99c2e43cf7a286a99ba27cdff5a1121a121b",
+    "largest_errors.csv": "39be87e76a3c8eb4950a1e11bc22c0b1f03c364c3e5cb3e249bd0e86bc25c1b6",
+    "median_predictions.csv": "61bdab124b842933d2990275b87c8688811aa957cf5bbf55feb2306bd714d048",
+    "median_test.json": "3946f4f4c235a0161f093e90b04ca1ffcb8e78056369714b6e86554c79f21afe",
+    "notebook_baselines.csv": "642084a20f903ba6fd21edc1bac35a86a85aa1a5d9376df4f545d7826c66cd4f",
+    "permutation_importance.csv": "7e69e305fb8bfd16c0b00f690dc000a1e230f5707054f7906de7cfc4ebfc91c4",
+    "pilot.json": "a5caad37485d4e708a0138ab92237d230576b03d4f747a5fc311030e29f28c8a",
+    "price_band_errors.csv": "eee0d80d23758f426f96b60d038a87c18181716c994388b29f07d10a8f4817fe",
+    "protocol.json": "245fcffdff635e28a8704da4387f71940442f0a6c01ca2cabc24fd07a6195ddd",
+    "random_forest_predictions.csv": "37b0585732f188a7be01c549781e41d1276328662ccb737358abb2d2448049b6",
+    "random_forest_test.json": "dfbf31dca776a71e98d74506ef8cd28a7dbb791a28c208543a218da3abf86406",
+    "random_splits.csv": "3b109014b7a3ce54d76c59a24910d41ccf7d71f5bee104818d742b8e4611442c",
+    "ridge_predictions.csv": "9dd81483cc327918e8929e95935b15514191161222ec070a0a533b3923e7247a",
+    "ridge_test.json": "d78293584d97d98a1b5d93cacbdafcc3e105830685fcbb13e54ce1f75d3df0f3",
+    "selection.json": "5c5795f4e7f178fc403a3f8ecbd01b488ac93e078e204cb34c002c74c9c74703",
+    "sensitivity.json": "e90aa56be671ceab2d5c03cf00e3a4f097a1375125ae984b5a2eae85186e7561",
+    "splits.csv": "6a212dd396139fe76482d78e768fe703c9a15d169d3dd6e705b268a04fe90329",
+    "split_summary.json": "31564885714fe20b6619f6fae88104a0e94dc3ac06d422b16d763573a39d80d5",
+    "test_results.json": "77de10b7d99e18cf3d2a7b5cc180e3f1a8bfb9951f242fb68e196180efc48d47",
+    "xgboost_predictions.csv": "c64267af100d06471a231181ead0a23211cf13ecf330e692383e201ae96317da",
+    "xgboost_test.json": "780f60e13dc0b44e08208732e63452b9e43e7b665d0a8d19ef6d6122dd874a40"
+  }
+}

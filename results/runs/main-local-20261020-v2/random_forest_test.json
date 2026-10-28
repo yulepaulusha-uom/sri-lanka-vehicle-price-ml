@@ -1,0 +1,19 @@
+{
+  "model": "Random Forest",
+  "params": {
+    "n_estimators": 300,
+    "min_samples_split": 4,
+    "min_samples_leaf": 2,
+    "max_features": 0.8,
+    "max_depth": null
+  },
+  "MAE": 4.909325293159695,
+  "RMSE": 19.016989712324357,
+  "R2": 0.8022570728160447,
+  "seconds": 52.42914930000552,
+  "peak_rss_mb": 318.34375,
+  "min_available_mb": 1337.2578125,
+  "prediction_seconds": 0.1609969999990426,
+  "artifact_bytes": 21494573,
+  "reload_verified": true
+}

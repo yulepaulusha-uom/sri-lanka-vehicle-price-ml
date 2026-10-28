@@ -1,0 +1,96 @@
+{
+  "winner": "Random Forest",
+  "best_by_model": [
+    {
+      "model": "Median",
+      "candidate": 0,
+      "params": {},
+      "MAE_mean": 28.36087624578709,
+      "MAE_std": 1.3441702545369738,
+      "RMSE_mean": 44.89128019754331,
+      "RMSE_std": 3.3755080867036935,
+      "R2_mean": -0.05603543883599595,
+      "R2_std": 0.010672960992921412,
+      "seconds_mean": 0.06902580000169109,
+      "seconds_std": 0.002333650010664078
+    },
+    {
+      "model": "Ridge",
+      "candidate": 0,
+      "params": {
+        "alpha": 0.1
+      },
+      "MAE_mean": 8.52471922791577,
+      "MAE_std": 0.6606667472814728,
+      "RMSE_mean": 19.703818578165077,
+      "RMSE_std": 2.6153896514178623,
+      "R2_mean": 0.7963595938435702,
+      "R2_std": 0.032159489336984586,
+      "seconds_mean": 0.15404817999806256,
+      "seconds_std": 0.012011214348709566
+    },
+    {
+      "model": "Random Forest",
+      "candidate": 6,
+      "params": {
+        "n_estimators": 300,
+        "min_samples_split": 4,
+        "min_samples_leaf": 2,
+        "max_features": 0.8,
+        "max_depth": null
+      },
+      "MAE_mean": 5.60023754531057,
+      "MAE_std": 0.5237548072612139,
+      "RMSE_mean": 14.318491410458297,
+      "RMSE_std": 2.410942807599668,
+      "R2_mean": 0.8924834698204229,
+      "R2_std": 0.02444013555367196,
+      "seconds_mean": 36.95765740000352,
+      "seconds_std": 0.33706595560175084
+    },
+    {
+      "model": "XGBoost",
+      "candidate": 9,
+      "params": {
+        "subsample": 0.85,
+        "reg_lambda": 2.0,
+        "reg_alpha": 0.5,
+        "n_estimators": 600,
+        "max_depth": 5,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.7
+      },
+      "MAE_mean": 6.377002286779898,
+      "MAE_std": 0.49778234422819556,
+      "RMSE_mean": 13.799796493306644,
+      "RMSE_std": 1.8618613660456944,
+      "R2_mean": 0.9004341813555545,
+      "R2_std": 0.014432649555399144,
+      "seconds_mean": 1.524553479999304,
+      "seconds_std": 0.0728212466730714
+    },
+    {
+      "model": "CatBoost",
+      "candidate": 8,
+      "params": {
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 10.0,
+        "iterations": 600,
+        "depth": 8
+      },
+      "MAE_mean": 6.871642719867195,
+      "MAE_std": 0.602782871977189,
+      "RMSE_mean": 14.1525185327552,
+      "RMSE_std": 2.268080975040017,
+      "R2_mean": 0.8947877345100412,
+      "R2_std": 0.022998921654206653,
+      "seconds_mean": 27.309677800000646,
+      "seconds_std": 1.762908757780569
+    }
+  ],
+  "eligible_models": [
+    "Random Forest"
+  ],
+  "rule": "Within 1% of lowest mean grouped CV MAE, then lowest mean fold fit time",
+  "test_used_for_selection": false
+}

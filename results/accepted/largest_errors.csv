@@ -1,0 +1,11 @@
+row_id,actual,prediction,residual,absolute_error,price_band,Brand,Model,YOM,Engine (cc),Gear,Fuel Type,Town,Leasing,Condition,AIR CONDITION,POWER STEERING,POWER MIRROR,POWER WINDOW
+8402,790.0,64.44760944215717,725.5523905578428,725.5523905578428,200+,TOYOTA,LEXUS 600HL,2011,600.0,Automatic,Hybrid,Katunayake,No Leasing,USED,Available,Available,Available,Available
+4035,225.0,92.1850680104618,132.8149319895382,132.8149319895382,200+,SUBARU,STI 12,2015,2000.0,Manual,Petrol,Colombo,No Leasing,USED,Available,Available,Available,Available
+1478,12.6,123.45689482237346,-110.85689482237346,110.85689482237346,0-25,MAZDA,6,2013,2000.0,Automatic,Petrol,Anuradapura,No Leasing,USED,Available,Available,Available,Available
+8364,53.75,141.6952503993306,-87.9452503993306,87.9452503993306,50-100,TOYOTA,IST,2023,1395.0,Automatic,Petrol,Ratnapura,No Leasing,USED,Available,Available,Available,Available
+3929,142.0,56.45798715659341,85.54201284340658,85.54201284340658,100-200,PEUGEOT,508,2011,1600.0,Automatic,Petrol,Colombo,No Leasing,USED,Available,Available,Available,Available
+3930,140.0,56.45798715659341,83.54201284340658,83.54201284340658,100-200,PEUGEOT,508,2011,1600.0,Automatic,Petrol,Colombo,No Leasing,USED,Available,Available,Available,Available
+1771,180.0,102.95598334235213,77.04401665764789,77.04401665764789,100-200,MERCEDES-BENZ,S350,2005,3000.0,Automatic,Petrol,Ja-Ela,No Leasing,USED,Available,Available,Available,Available
+130,364.5,432.42293981481487,-67.92293981481487,67.92293981481487,200+,BMW,530E,2017,2000.0,Automatic,Petrol,Colombo,No Leasing,USED,Available,Available,Available,Available
+9713,64.75,127.5355145575426,-62.7855145575426,62.7855145575426,50-100,VOLKSWAGEN,LEAF POLO E-UP,2019,1500.0,Automatic,Electric,Piliyandala,No Leasing,USED,Available,Available,Available,Available
+155,149.5,212.2744220772283,-62.77442207722831,62.77442207722831,100-200,BMW,MINI COOPER,2020,1200.0,Automatic,Petrol,Colombo,No Leasing,USED,Available,Available,Available,Available

@@ -1,0 +1,40 @@
+{
+  "config": "C0",
+  "fold": 2,
+  "mae": 9.419643328641435,
+  "rmse": 17.436141571207767,
+  "r2": 0.7939866309678562,
+  "resources": {
+    "seconds": 8.054109999909997,
+    "peak_process_tree_rss_bytes": 213782528,
+    "minimum_system_available_bytes": 529285120,
+    "sample_interval_seconds": 0.1,
+    "best_iteration": [
+      [
+        25739,
+        18707,
+        11807,
+        5006
+      ]
+    ],
+    "train_counts": [
+      5320,
+      5328,
+      5311,
+      5298
+    ],
+    "validation_counts": [
+      929,
+      921,
+      938,
+      951
+    ],
+    "bag_weights": [
+      5320.0,
+      5328.0,
+      5311.0,
+      5298.0
+    ],
+    "group_overlap": 0
+  }
+}

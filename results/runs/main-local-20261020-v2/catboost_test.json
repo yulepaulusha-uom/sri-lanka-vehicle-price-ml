@@ -1,0 +1,18 @@
+{
+  "model": "CatBoost",
+  "params": {
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 10.0,
+    "iterations": 600,
+    "depth": 8
+  },
+  "MAE": 6.574668210754305,
+  "RMSE": 19.940613170677043,
+  "R2": 0.7825825323892993,
+  "seconds": 28.656349199998658,
+  "peak_rss_mb": 276.33984375,
+  "min_available_mb": 1405.0390625,
+  "prediction_seconds": 0.0313297000102466,
+  "artifact_bytes": 3976585,
+  "reload_verified": true
+}

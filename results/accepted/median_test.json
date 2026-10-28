@@ -1,0 +1,13 @@
+{
+  "model": "Median",
+  "params": {},
+  "MAE": 27.885526605704417,
+  "RMSE": 44.03458787099912,
+  "R2": -0.06024269213135858,
+  "seconds": 0.08276550000300631,
+  "peak_rss_mb": 246.93359375,
+  "min_available_mb": 1410.39453125,
+  "prediction_seconds": 0.021763900003861636,
+  "artifact_bytes": 10809,
+  "reload_verified": true
+}

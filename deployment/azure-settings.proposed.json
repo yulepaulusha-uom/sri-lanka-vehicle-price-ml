@@ -1,0 +1,26 @@
+{
+  "status": "proposal only; not applied",
+  "resource_group": "rg-it5514-269112b",
+  "app_service_plan": "asp-it5514-269112b-b1",
+  "web_app": "it5514-269112b-vehicle-price",
+  "region": "southeastasia",
+  "region_approved": false,
+  "sku": "B1",
+  "instances": 1,
+  "linuxFxVersion": "PYTHON|3.12",
+  "startup_command": "python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0 --server.headless true",
+  "alwaysOn": true,
+  "httpsOnly": true,
+  "healthCheckPath": "/_stcore/health",
+  "app_settings": {
+    "SCM_DO_BUILD_DURING_DEPLOYMENT": "true",
+    "WEBSITE_WARMUP_PATH": "/_stcore/health",
+    "WEBSITE_WARMUP_STATUSES": "200"
+  },
+  "authentication": "GitHub OIDC; Website Contributor scoped to approved existing Web App",
+  "public_deployment_approved": false,
+  "subscription_queried": false,
+  "base_retail_usd_per_hour": 0.018,
+  "base_retail_usd_per_730_hours": 13.14,
+  "additional_costs": "Tax, egress, monitoring/logs, domain and GitHub usage as applicable; subscription quote not verified"
+}

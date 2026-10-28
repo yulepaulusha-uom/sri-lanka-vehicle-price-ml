@@ -1,0 +1,40 @@
+{
+  "price_quantiles": {
+    "0.0": 2.65,
+    "0.25": 26.0,
+    "0.5": 43.0,
+    "0.75": 69.81111111111112,
+    "0.9": 94.8125,
+    "0.95": 123.83928571428572,
+    "0.99": 230.0,
+    "1.0": 575.0
+  },
+  "price_skew": 3.2540000748885602,
+  "rare_models_under_5": 1122,
+  "whitespace_counts": {
+    "Brand": 0,
+    "Model": 0,
+    "Gear": 0,
+    "Fuel Type": 0,
+    "Town": 0,
+    "Leasing": 0,
+    "Condition": 0,
+    "AIR CONDITION": 0,
+    "POWER STEERING": 0,
+    "POWER MIRROR": 0,
+    "POWER WINDOW": 0
+  },
+  "repeated_fractional_prices": {
+    "32.5": 46,
+    "28.5": 45,
+    "71.3560974390244": 43,
+    "32.0": 41,
+    "26.5": 40,
+    "55.0": 40,
+    "72.5": 38,
+    "37.5": 38,
+    "33.5": 37,
+    "35.0": 36
+  },
+  "decisions": "No speculative category corrections, price trimming, log target, or inferred odometer values."
+}

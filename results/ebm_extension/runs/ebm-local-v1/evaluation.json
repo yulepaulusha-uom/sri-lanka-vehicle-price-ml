@@ -1,0 +1,55 @@
+{
+  "mae": 9.764402579633423,
+  "rmse": 23.90789559993051,
+  "r2": 0.6874639514194476,
+  "training": {
+    "seconds": 7.870117499958724,
+    "peak_process_tree_rss_bytes": 215375872,
+    "minimum_system_available_bytes": 1288450048,
+    "sample_interval_seconds": 0.1,
+    "best_iteration": [
+      [
+        19642,
+        10586,
+        11439,
+        26000
+      ]
+    ],
+    "train_counts": [
+      6633,
+      6651,
+      6641,
+      6638
+    ],
+    "validation_counts": [
+      1178,
+      1160,
+      1170,
+      1173
+    ],
+    "bag_weights": [
+      6633.0,
+      6651.0,
+      6641.0,
+      6638.0
+    ],
+    "group_overlap": 0
+  },
+  "model_bytes": 147531,
+  "model_sha256": "b21f4a37aabf473a405e12145bca5d011a544e17b415901cd04272779c364759",
+  "selected": {
+    "config": {
+      "id": "C4",
+      "max_bins": 256,
+      "learning_rate": 0.02,
+      "min_samples_leaf": 20
+    },
+    "criterion": "minimum mean grouped CV MAE",
+    "outer_fits": 30,
+    "selected_cv_mae": 10.301987047833688,
+    "frozen_before_final_fit": true
+  },
+  "negative_predictions": 38,
+  "holdout": "Previously inspected holdout; evaluated after frozen EBM selection.",
+  "reload_max_difference": 0.0
+}

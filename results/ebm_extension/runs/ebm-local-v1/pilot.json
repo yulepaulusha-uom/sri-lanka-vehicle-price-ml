@@ -1,0 +1,58 @@
+{
+  "rows": 2000,
+  "rounds_cap": 200,
+  "resources": {
+    "seconds": 0.9217151999473572,
+    "peak_process_tree_rss_bytes": 163643392,
+    "minimum_system_available_bytes": 681553920,
+    "sample_interval_seconds": 0.1,
+    "best_iteration": [
+      [
+        2600,
+        2600,
+        2600,
+        2600
+      ]
+    ],
+    "train_counts": [
+      1705,
+      1701,
+      1706,
+      1703
+    ],
+    "validation_counts": [
+      295,
+      299,
+      294,
+      297
+    ],
+    "bag_weights": [
+      1705.0,
+      1701.0,
+      1706.0,
+      1703.0
+    ],
+    "group_overlap": 0
+  },
+  "versions": {
+    "interpret-core": "0.7.8",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "joblib": "1.6.0",
+    "psutil": "7.2.2"
+  },
+  "python": "3.12.10",
+  "constructor": "(feature_names: Optional[collections.abc.Sequence[Optional[str]]] = None, feature_types: Optional[collections.abc.Sequence[Union[NoneType, str, collections.abc.Sequence[str], collections.abc.Sequence[float]]]] = None, max_bins: int = 1024, max_interaction_bins: int = 64, interactions: Union[int, float, str, collections.abc.Sequence[Union[int, str, collections.abc.Sequence[Union[int, str]]]], NoneType] = '5x', exclude: Optional[collections.abc.Sequence[Union[int, str, collections.abc.Sequence[Union[int, str]]]]] = None, validation_size: Union[int, float, NoneType] = 0.15, outer_bags: int = 14, inner_bags: Optional[int] = 0, learning_rate: float = 0.04, greedy_ratio: Optional[float] = 10.0, cyclic_progress: Union[bool, float, int] = False, smoothing_rounds: Optional[int] = 500, interaction_smoothing_rounds: Optional[int] = 100, max_rounds: Optional[int] = 50000, early_stopping_rounds: Optional[int] = 100, early_stopping_tolerance: Optional[float] = 1e-05, callback: Optional[collections.abc.Callable[[int, int, bool, float], bool]] = None, min_samples_leaf: Optional[int] = 4, min_hessian: Optional[float] = 0.0, reg_alpha: Optional[float] = 0.0, reg_lambda: Optional[float] = 0.0, max_delta_step: Optional[float] = 0.0, gain_scale: Optional[float] = 5.0, min_cat_samples: Optional[int] = 10, cat_smooth: Optional[float] = 10.0, missing: str = 'separate', max_leaves: int = 2, monotone_constraints: Optional[collections.abc.Sequence[int]] = None, objective: str = 'rmse', n_jobs: Optional[int] = -2, random_state: Optional[int] = 42)",
+  "fit_signature": "(X, y, sample_weight=None, bags=None, init_score=None)",
+  "unknown_prediction": [
+    104.12698710526192,
+    153.28583258081665
+  ],
+  "missing_prediction": [
+    104.12698710526192,
+    153.28583258081665
+  ],
+  "export_reload_pass": true,
+  "estimate_full_search_seconds_upper_linear": 1079.927614018321
+}

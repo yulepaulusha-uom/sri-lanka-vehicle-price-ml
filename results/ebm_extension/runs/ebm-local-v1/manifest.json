@@ -1,0 +1,6 @@
+{
+  "run": "ebm-local-v1",
+  "model": "models\\ebm_extension\\ebm-local-v1\\model.joblib",
+  "sha256": "b21f4a37aabf473a405e12145bca5d011a544e17b415901cd04272779c364759",
+  "results": "results\\ebm_extension\\runs\\ebm-local-v1"
+}

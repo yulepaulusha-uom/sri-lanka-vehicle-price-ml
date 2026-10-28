@@ -1,0 +1,88 @@
+[
+  {
+    "model": "Median",
+    "params": {},
+    "MAE": 27.885526605704417,
+    "RMSE": 44.03458787099912,
+    "R2": -0.06024269213135858,
+    "seconds": 0.08276550000300631,
+    "peak_rss_mb": 246.93359375,
+    "min_available_mb": 1410.39453125,
+    "prediction_seconds": 0.021763900003861636,
+    "artifact_bytes": 10809,
+    "reload_verified": true
+  },
+  {
+    "model": "Ridge",
+    "params": {
+      "alpha": 0.1
+    },
+    "MAE": 8.413340152563459,
+    "RMSE": 21.486517427026847,
+    "R2": 0.7475650545902056,
+    "seconds": 0.20251489999645855,
+    "peak_rss_mb": 248.91015625,
+    "min_available_mb": 1405.23046875,
+    "prediction_seconds": 0.022674299994832836,
+    "artifact_bytes": 24296,
+    "reload_verified": true
+  },
+  {
+    "model": "Random Forest",
+    "params": {
+      "n_estimators": 300,
+      "min_samples_split": 4,
+      "min_samples_leaf": 2,
+      "max_features": 0.8,
+      "max_depth": null
+    },
+    "MAE": 4.909325293159695,
+    "RMSE": 19.016989712324357,
+    "R2": 0.8022570728160447,
+    "seconds": 52.42914930000552,
+    "peak_rss_mb": 318.34375,
+    "min_available_mb": 1337.2578125,
+    "prediction_seconds": 0.1609969999990426,
+    "artifact_bytes": 21494573,
+    "reload_verified": true
+  },
+  {
+    "model": "XGBoost",
+    "params": {
+      "subsample": 0.85,
+      "reg_lambda": 2.0,
+      "reg_alpha": 0.5,
+      "n_estimators": 600,
+      "max_depth": 5,
+      "learning_rate": 0.05,
+      "colsample_bytree": 0.7
+    },
+    "MAE": 5.985132617892831,
+    "RMSE": 19.507798674047635,
+    "R2": 0.7919182721669598,
+    "seconds": 1.7530268000118667,
+    "peak_rss_mb": 250.484375,
+    "min_available_mb": 1430.04296875,
+    "prediction_seconds": 0.052317100009531714,
+    "artifact_bytes": 1253150,
+    "reload_verified": true
+  },
+  {
+    "model": "CatBoost",
+    "params": {
+      "learning_rate": 0.05,
+      "l2_leaf_reg": 10.0,
+      "iterations": 600,
+      "depth": 8
+    },
+    "MAE": 6.574668210754305,
+    "RMSE": 19.940613170677043,
+    "R2": 0.7825825323892993,
+    "seconds": 28.656349199998658,
+    "peak_rss_mb": 276.33984375,
+    "min_available_mb": 1405.0390625,
+    "prediction_seconds": 0.0313297000102466,
+    "artifact_bytes": 3976585,
+    "reload_verified": true
+  }
+]

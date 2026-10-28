@@ -1,0 +1,21 @@
+{
+  "model": "XGBoost",
+  "params": {
+    "subsample": 0.85,
+    "reg_lambda": 2.0,
+    "reg_alpha": 0.5,
+    "n_estimators": 600,
+    "max_depth": 5,
+    "learning_rate": 0.05,
+    "colsample_bytree": 0.7
+  },
+  "MAE": 5.985132617892831,
+  "RMSE": 19.507798674047635,
+  "R2": 0.7919182721669598,
+  "seconds": 1.7530268000118667,
+  "peak_rss_mb": 250.484375,
+  "min_available_mb": 1430.04296875,
+  "prediction_seconds": 0.052317100009531714,
+  "artifact_bytes": 1253150,
+  "reload_verified": true
+}

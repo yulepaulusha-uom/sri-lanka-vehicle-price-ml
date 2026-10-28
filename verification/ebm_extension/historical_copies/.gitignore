@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/*.csv
+results/runs/*
+!results/runs/main-local-20261020-v2/
+!results/runs/main-local-20261020-v2/**
+*.log
+.streamlit/secrets.toml
+.pip-cache/
+.matplotlib/
+.ipython/
+.jupyter/
+verification/*.png
+verification/partial_promotion/
+
+# Local credentials must not enter a submission or repository.
+.env
+.env.*

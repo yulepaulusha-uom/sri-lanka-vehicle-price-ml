@@ -1,0 +1,15 @@
+{
+  "model": "Ridge",
+  "params": {
+    "alpha": 0.1
+  },
+  "MAE": 8.413340152563459,
+  "RMSE": 21.486517427026847,
+  "R2": 0.7475650545902056,
+  "seconds": 0.20251489999645855,
+  "peak_rss_mb": 248.91015625,
+  "min_available_mb": 1405.23046875,
+  "prediction_seconds": 0.022674299994832836,
+  "artifact_bytes": 24296,
+  "reload_verified": true
+}
