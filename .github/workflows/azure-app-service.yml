@@ -61,5 +61,7 @@ jobs:
           startup-command: python -m streamlit run app.py --server.port 8000 --server.address 0.0.0.0 --server.headless true
       - name: Check public HTTP health
         env:
-          APP_NAME: ${{ vars.AZURE_WEBAPP_NAME }}
-        run: curl --fail --retry 12 --retry-delay 10 --retry-all-errors "https://${APP_NAME}.azurewebsites.net/_stcore/health"
+          APP_HOSTNAME: ${{ vars.AZURE_WEBAPP_HOSTNAME }}
+        run: |
+          test -n "$APP_HOSTNAME"
+          curl --fail --retry 12 --retry-delay 10 --retry-all-errors "https://${APP_HOSTNAME}/_stcore/health"
