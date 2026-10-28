@@ -2,9 +2,17 @@
 
 **269112B · IT5514 Applied Machine Learning**
 
+## Live demonstration
+
+[Open the deployed vehicle-price dashboard](https://it5514-269112b-vehicle-price-fpdqeybnc4bsgzd0.centralindia-01.azurewebsites.net/).
+
+Deployed on 28 October 2026 to Azure App Service **Free F1**, Linux Python 3.12, Central India. This small lecturer demonstration uses the existing fitted models and recorded results; it performs no training. The free tier may start slowly after inactivity and has CPU, memory and connection quotas.
+
+[Deployment and inference verification](https://github.com/yulepaulusha-uom/sri-lanka-vehicle-price-ml/actions/runs/40658869780) passed. Public browser checks confirmed the held-out RF/EBM predictions, additive explanation and the negative-prediction warning. Historical preparation and inventory documents describe their dated snapshots; this deployment does not change the experiments.
+
 This assignment investigates an Explainable Boosting Machine (EBM) as a directly interpretable additive regressor. It is a **subsequent extension** of the completed five-model experiment. EBM was absent from the supplied eleven-lecture transcript, but its optimization uses gradient boosting; lecturer eligibility has not been formally confirmed. Random Forest remains the historical accuracy-selected winner.
 
-## Report review and Azure preparation
+## Report review and Azure deployment
 
 The report preserves the verified findings, tables, XAI and equations. The published DOCX/PDF reflect the latest student-edited document. AI assistance is acknowledged in this README. No notebook, model, split or accepted result was changed during this preparation.
 
@@ -12,7 +20,7 @@ The app has passed clean **Linux CPython 3.12.16** verification with 45 exact ru
 
 The reviewed GitHub file list is in `deployment/github-files.json`. `python deployment/prepare_github.py` prepares a fresh `build/github/` review directory without initializing Git, committing or pushing. The Azure workflow is manual and defaults to verification only. The Azure payload is built separately with `python deployment/prepare.py`; it uses root `app.py` and runtime-only requirements. Do not deploy the whole research repository or a Windows virtual environment.
 
-The approved GitHub destination is [sri-lanka-vehicle-price-ml](https://github.com/yulepaulusha-uom/sri-lanka-vehicle-price-ml). Azure region and budget remain pending; no Azure resources or public application deployment have been created. Azure runtime availability, names/quota and actual public proxy behavior must be rechecked after approval. The required 3–5-minute video and final submission ZIP remain uncreated.
+The approved GitHub destination is [sri-lanka-vehicle-price-ml](https://github.com/yulepaulusha-uom/sri-lanka-vehicle-price-ml). The free Azure demonstration is deployed in Central India. Singapore was rejected by the student subscription’s allowed-region restriction. GitHub authenticates through a dedicated OIDC identity with Website Contributor scoped only to this Web App. Paid scaling has not been enabled. The required 3–5-minute video and final submission ZIP remain uncreated.
 
 ## Review these deliverables
 
